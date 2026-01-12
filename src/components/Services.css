@@ -1,0 +1,106 @@
+.services-section {
+    padding: 120px 0;
+    background-color: #ffffff;
+}
+
+.services-subtitle {
+    color: #2e7d32;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.services-main-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #001f3f;
+    margin-bottom: 30px;
+}
+
+.services-main-title span {
+    color: #001f3f; /* Using Cyan for visual consistency */
+}
+
+.services-intro {
+    font-size: 1.5rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.8;
+}
+
+/* Fixed the "Hanging" issue here */
+.service-box {
+    position: relative;
+    height: 500px; 
+    overflow: hidden; /* This keeps the zoom inside the box */
+    border-radius: 12px;
+    background-color: #001f3f;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-image-bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensures content is always at bottom */
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* transition is faster for a snappier feel */
+transition: transform 0.4s ease-out, opacity 0.3s ease;
+/* Add this to hardware accelerate the animation */
+    will-change: transform; 
+    backface-visibility: hidden
+}
+
+.service-content h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    line-height: 1.2;
+    z-index: 2;
+}
+
+.hover-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.hover-text p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* --- REVISED TRIGGER --- */
+.service-box:hover .service-image-bg {
+    /* Subtle zoom without breaking the container */
+    transform: scale(1.05) translateZ(0);
+    /* Solid blue overlay on hover */
+    background-image: linear-gradient(rgba(0, 31, 63, 0.95), rgba(0, 31, 63, 0.95)) !important;
+}
+
+.service-box:hover .hover-text {
+    max-height: 200px;
+    opacity: 1;
+}
+
+/* Mobile adjustments to prevent overlap on small screens */
+@media (max-width: 768px) {
+    .services-main-title {
+        font-size: 2.5rem;
+    }
+    .service-box {
+        height: 400px;
+    }
+}

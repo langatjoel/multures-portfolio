@@ -1,0 +1,84 @@
+.about-section {
+    padding: 120px 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.section-subtitle {
+    color: #2e7d32; /* Match your brand green or blue */
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    font-size: 3.8rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #001f3f; /* Dark Blue */
+}
+
+.section-title span {
+    color: #2e7d32;
+}
+
+.about-text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Image Wrapper with Badge */
+.about-image-wrapper {
+    position: relative;
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background-color: #001f3f;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.experience-badge h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #00d2ff;
+}
+
+.experience-badge p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* Feature List */
+.about-features {
+    list-style: none;
+    padding: 0;
+}
+
+.about-features li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.3rem;
+}
+
+.about-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2e7d32;
+    font-weight: bold;
+}

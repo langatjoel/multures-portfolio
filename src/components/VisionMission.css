@@ -1,0 +1,54 @@
+.vm-section {
+    padding: 120px 0;
+    background-color: #f8f9fa; /* Light grey to contrast with white cards */
+}
+
+.vm-card {
+    border: none;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.icon-box {
+    margin-bottom: 30px;
+    color: #001f3f; /* Your Dark Blue */
+    transition: transform 0.3s ease;
+}
+
+.vm-card .card-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #001f3f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.vm-card .card-text {
+font-size: 1.4rem; /* Increased from 1.05rem */
+    line-height: 1.9; /* More space between lines */
+    color: #444;
+    padding: 0 15px;
+}
+
+/* --- HOVER EFFECTS --- */
+
+.vm-card:hover {
+    transform: translateY(-15px); /* Card lifts up */
+    box-shadow: 0 20px 40px rgba(0, 31, 63, 0.2); /* Deeper shadow */
+    background-color: #001f3f; /* Changes to Dark Blue */
+}
+
+.vm-card:hover .card-title, 
+.vm-card:hover .card-text, 
+.vm-card:hover .icon-box {
+    color: #ffffff !important; /* Text turns white on hover */
+}
+
+.vm-card:hover .icon-box {
+    transform: scale(1.2); /* Icon grows slightly */
+}
+

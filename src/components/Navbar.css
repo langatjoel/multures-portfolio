@@ -1,0 +1,30 @@
+.custom-navbar {
+    background: transparent !important;
+    padding-top: 20px;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+}
+
+.custom-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Makes the 3 lines white */
+}
+
+.custom-menu {
+    background-color: #001f3f !important; /* Your Dark Blue */
+    width: 300px !important;
+}
+
+.menu-item {
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: uppercase;
+}

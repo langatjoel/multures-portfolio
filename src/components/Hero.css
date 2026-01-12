@@ -1,0 +1,43 @@
+.hero-section {
+    /* Background image with a dark overlay */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('../assets/pexels-sevenstormphotography-443383.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.white-line {
+    width: 350px;
+    height: 2px;
+    background-color: white;
+    margin: 25px auto;
+}
+
+.hero-web {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+    .hero-title { font-size: 2.2rem; }
+    .white-line { width: 150px; }
+}
