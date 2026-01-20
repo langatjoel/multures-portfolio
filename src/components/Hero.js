@@ -8,7 +8,7 @@ const Hero = () => {
       <Container className="text-center">
         <div className="hero-text-content">
           <h1 className="hero-title">MULTURES SUPPLIERS LTD<br/>PROFILE</h1>
-          <p className="hero-subtitle">Your Aluminium fitting and Glazing partner</p>
+          <p className="hero-subtitle">Specialise in premium aluminium fittings and glazing gor innovative interior and exterior design and fabrication</p>
           <div className="white-line"></div>
           <p className="hero-web">www.multures.com</p>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Services.css';
 
-import windowsImg from '../assets/3PANE_SLIDER_INTERIOR_F360.jpg'; 
+import windowsImg from '../assets/folding-concertina-door-1-1.webp'; 
 import partitionsImg from '../assets/special-lite-dual-glazed-litespace-office-corner-sq-scaled.webp';
 import curtainImg from '../assets/p1.jpg';
 import fabricationImg from '../assets/special-lite-dual-glazed-litespace-office-corner-sq-scaled.webp';
