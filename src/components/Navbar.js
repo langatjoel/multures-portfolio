@@ -23,6 +23,7 @@ const MyNavbar = () => {
               <Nav.Link href="#about" className="menu-item">About Us</Nav.Link>
               <Nav.Link href="#mission" className="menu-item">Our Mission</Nav.Link>
               <Nav.Link href="#services" className="menu-item">Products & Services</Nav.Link>
+              <Nav.Link href="#directors" className="menu-item">Leadership</Nav.Link>
               <Nav.Link href="#contact" className="menu-item">Talk To Us</Nav.Link>
             </Nav>
           </Offcanvas.Body>

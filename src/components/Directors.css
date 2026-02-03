@@ -1,0 +1,75 @@
+.directors-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.directors-subtitle {
+    color: #2e7d32;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.directors-main-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: #001f3f;
+    margin-bottom: 20px;
+}
+
+.directors-main-title span {
+    color: #00d2ff;
+}
+
+.director-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.director-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 31, 63, 0.15);
+}
+
+.director-img-container {
+    height: 200px;
+    background: #001f3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.director-placeholder {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.director-name {
+    color: #001f3f;
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.director-role {
+    color: #00d2ff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.director-divider {
+    height: 2px;
+    width: 40px;
+    background: #eee;
+    margin: 0 auto 10px;
+}
+
+.director-nationality {
+    font-size: 0.8rem;
+    color: #999;
+}
