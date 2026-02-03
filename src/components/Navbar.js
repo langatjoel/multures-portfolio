@@ -1,6 +1,6 @@
 import { Container, Navbar, Offcanvas, Nav } from 'react-bootstrap';
 import './Navbar.css';
-import logoImg from '../assets/logo.png'; 
+import logoImg from '../assets/logo2.png'; 
 
 const MyNavbar = () => {
   return (
