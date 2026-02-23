@@ -44,12 +44,22 @@ const Contact = () => {
               <h2 className="contact-title">TALK TO US</h2>
               
               <div className="contact-details">
-                <p><Globe className="me-3" /> Website: www.multures.socials</p>
-                <p><Telephone className="me-3" /> Phone: +254 727304963</p>
-                <p><Envelope className="me-3" /> Mail: Multuressuppliers@multures.social</p>
-                <p><Share className="me-3" /> Social Media: MultureSuppliersLtd</p>
-                <p><GeoAlt className="me-3" /> Outlet Address: Nrb Bunyala Rd bazaar bld</p>
-              </div>
+  <p>
+    <Globe className="me-3" /> 
+    Website: <a href="https://www.multures.social" target="_blank" rel="noopener noreferrer" className="contact-link">
+      www.multures.social
+    </a>
+  </p>
+  <p><Telephone className="me-3" /> Phone: +254 727304963</p>
+  <p>
+    <Envelope className="me-3" /> 
+    Mail: <a href="mailto:Multuressuppliers@multures.social" className="contact-link">
+      Multuressuppliers@multures.social
+    </a>
+  </p>
+  <p><Share className="me-3" /> Social Media: MultureSuppliersLtd</p>
+  <p><GeoAlt className="me-3" /> Outlet Address: Nrb Bunyala Rd bazaar bld</p>
+</div>
 
               {/* Success and Error Alerts */}
               {status === "SUCCESS" && (

@@ -72,3 +72,14 @@
   background-size: cover;
   background-position: center;
 }
+
+.contact-link {
+    color: #00d2ff; /* Cyan color to match your theme */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #001f3f; /* Dark navy on hover */
+    text-decoration: underline;
+}
