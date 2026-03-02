@@ -9,6 +9,7 @@ import VisionMission from './components/VisionMission';
 import Services from './components/Services';
 import Contact from './components/Contact';
 import Directors from './components/Directors';
+import Projects from './components/Projects';
 
 function App() {
   // Initialize AOS
@@ -28,6 +29,7 @@ function App() {
         <About />
         <VisionMission />
         <Services />
+        <Projects />
         <Directors />
         <Contact />
       </main>
