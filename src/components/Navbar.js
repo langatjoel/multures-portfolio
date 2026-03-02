@@ -7,7 +7,7 @@ const MyNavbar = () => {
     <Navbar expand={false} className="custom-navbar fixed-top">
       <Container fluid className="px-4">
         <Navbar.Brand href="#home" className="brand-logo-container">
-          <img src={logoImg} alt="Multures Logo" className="logo-img" />
+          <img src={logoImg} alt="Multures Logo" className="logo-img" loading="lazy" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="offcanvasNavbar" className="custom-toggler" />

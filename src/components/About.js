@@ -11,7 +11,7 @@ const About = () => {
           {/* Left Side: Image & Badge sliding from Left */}
           <Col lg={6} className="mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
             <div className="about-image-wrapper">
-              <img src={aboutImg} alt="Our Glazing Work" className="img-fluid rounded shadow" />
+              <img src={aboutImg} alt="Our Glazing Work" className="img-fluid rounded shadow" loading="lazy" />
               <div className="experience-badge" data-aos="zoom-in" data-aos-delay="500">
                 <h3>25+</h3>
                 <p>Combined Years</p>

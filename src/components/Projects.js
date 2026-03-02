@@ -30,7 +30,7 @@ const Projects = () => {
             <Col lg={6} md={12} key={index} data-aos="fade-up" data-aos-delay={index * 200}>
               <div className="project-item">
                 <div className="project-img-wrapper">
-                  <img src={project.img} alt={project.title} className="img-fluid" />
+                  <img src={project.img} alt={project.title} className="img-fluid" loading="lazy" />
                   <div className="project-overlay">
                     <div className="overlay-content">
                       <span className="project-cat">{project.category}</span>

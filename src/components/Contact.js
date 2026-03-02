@@ -40,7 +40,7 @@ const Contact = () => {
         <Row className="g-0">
           <Col lg={6} className="contact-left-content">
             <div className="contact-info-wrapper">
-              <img src={logoImg} alt="Multures Logo" className="contact-logo" />
+              <img src={logoImg} alt="Multures Logo" className="contact-logo" loading="lazy" />
               <h2 className="contact-title">TALK TO US</h2>
               
               <div className="contact-details">

@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+# Sitemap location
+Sitemap: https://www.multures.social/sitemap.xml
+# https://www.robotstxt.org/robotstxt.html
