@@ -1,6 +1,5 @@
 .hero-section {
-    /* Background image with a dark overlay */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('../assets/pexels-sevenstormphotography-443383.jpg'); 
     background-size: cover;
     background-position: center;
@@ -8,36 +7,46 @@
     display: flex;
     align-items: center;
     color: white;
+    /* Prevents scrollbars during zoom/fade animations */
+    overflow: hidden; 
 }
 
 .hero-title {
     font-size: 4rem;
     font-weight: 900;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 20px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
 .hero-subtitle {
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: 3px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .white-line {
-    width: 350px;
-    height: 2px;
-    background-color: white;
-    margin: 25px auto;
+    width: 250px;
+    height: 3px;
+    background-color: #00d2ff; /* Using your Cyan accent for the line */
+    margin: 30px auto;
+    transition: width 1s ease-in-out;
 }
 
 .hero-web {
     font-size: 1.1rem;
     letter-spacing: 2px;
     opacity: 0.9;
+    font-weight: 700;
 }
 
+/* Mobile adjustments */
 @media (max-width: 768px) {
-    .hero-title { font-size: 2.2rem; }
-    .white-line { width: 150px; }
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1rem; letter-spacing: 1px; }
+    .white-line { width: 100px; }
 }

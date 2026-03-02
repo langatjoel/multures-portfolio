@@ -1,6 +1,8 @@
 .directors-section {
     padding: 100px 0;
     background-color: #f8f9fa;
+    /* Prevents horizontal scrollbars during side-sliding animations */
+    overflow-x: hidden; 
 }
 
 .directors-subtitle {
@@ -21,30 +23,37 @@
     color: #00d2ff;
 }
 
+/* Card Styling */
 .director-card {
     border: none;
     border-radius: 15px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Combined transition for AOS and Hover */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease; 
     background: #ffffff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .director-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 30px rgba(0, 31, 63, 0.15);
+    transform: translateY(-15px) scale(1.02); /* Slight lift and zoom */
+    box-shadow: 0 15px 40px rgba(0, 31, 63, 0.2);
 }
 
 .director-img-container {
     height: 200px;
-    background: #001f3f;
+    background: linear-gradient(135deg, #001f3f 0%, #00d2ff 100%); /* Added a gradient for depth */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .director-placeholder {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.director-card:hover .director-placeholder {
+    transform: scale(1.1); /* Icon zooms when card is hovered */
 }
 
 .director-name {
@@ -56,20 +65,22 @@
 
 .director-role {
     color: #00d2ff;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.9rem;
     text-transform: uppercase;
     margin-bottom: 15px;
+    letter-spacing: 1px;
 }
 
 .director-divider {
-    height: 2px;
-    width: 40px;
-    background: #eee;
+    height: 3px;
+    width: 30px;
+    background: #00d2ff; /* Matching the cyan theme */
     margin: 0 auto 10px;
 }
 
 .director-nationality {
     font-size: 0.8rem;
     color: #999;
+    font-weight: 500;
 }

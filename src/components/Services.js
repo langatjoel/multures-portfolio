@@ -34,7 +34,8 @@ const Services = () => {
   return (
     <section id="services" className="services-section">
       <Container>
-        <div className="text-center mb-5">
+        {/* Header Section animates upward */}
+        <div className="text-center mb-5" data-aos="fade-up">
           <h6 className="services-subtitle">Expert Installation</h6>
           <h2 className="services-main-title">OUR PRODUCTS <span>& SERVICES</span></h2>
           <p className="services-intro">
@@ -43,9 +44,16 @@ const Services = () => {
           </p>
         </div>
 
-        <Row className="g-4"> {/* Added g-4 for consistent gutter spacing */}
+        <Row className="g-4">
           {products.map((item, index) => (
-            <Col lg={3} md={6} key={index}>
+            <Col 
+              lg={3} 
+              md={6} 
+              key={index}
+              /* Staggered animation: each card waits 150ms longer than the previous one */
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+            >
               <div className="service-box">
                 <div 
                   className="service-image-bg" 

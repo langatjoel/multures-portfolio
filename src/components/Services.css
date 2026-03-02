@@ -1,6 +1,7 @@
 .services-section {
     padding: 120px 0;
     background-color: #ffffff;
+    overflow-x: hidden;
 }
 
 .services-subtitle {
@@ -32,13 +33,15 @@
 
 /* Fixed the "Hanging" issue here */
 .service-box {
-    position: relative;
+position: relative;
     height: 500px; 
-    overflow: hidden; /* This keeps the zoom inside the box */
+    overflow: hidden; 
     border-radius: 12px;
     background-color: #001f3f;
     cursor: pointer;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    /* Ensures the AOS animation doesn't clip the shadow */
+    margin-bottom: 20px;
 }
 
 .service-image-bg {
