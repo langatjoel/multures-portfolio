@@ -32,6 +32,77 @@
 
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo2.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- JSON-LD Structured Data for Search Results & Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Multure Supplies Ltd",
+          "url": "https://www.multures.social/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.multures.social/logo2.png",
+            "width": 250,
+            "height": 250
+          },
+          "image": "https://www.multures.social/logo2.png",
+          "description": "Multure Supplies Ltd provides aluminium windows, doors, curtain walling, and glass partition installations across Kenya.",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+254-727-304-963",
+            "contactType": "Customer Service",
+            "areaServed": "KE"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Nrb Bunyala Rd bazaar bld",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+          },
+          "email": "Multuressuppliers@multures.social",
+          "sameAs": [
+            "https://www.facebook.com/MultureSuppliersLtd",
+            "https://www.linkedin.com/company/multure-supplies-ltd"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "url": "https://www.multures.social/",
+          "name": "Multure Supplies Ltd",
+          "image": "https://www.multures.social/logo2.png",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Multure Supplies Ltd",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.multures.social/logo2.png"
+            }
+          }
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Multure Supplies Ltd",
+          "image": "https://www.multures.social/logo2.png",
+          "logo": "https://www.multures.social/logo2.png",
+          "description": "Aluminium and glazing contractor in Kenya",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Nrb Bunyala Rd bazaar bld",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+          },
+          "telephone": "+254-727-304-963",
+          "email": "Multuressuppliers@multures.social",
+          "url": "https://www.multures.social/",
+          "areaServed": ["Nairobi", "Mombasa", "Kisumu", "Nakuru", "KE"],
+          "serviceType": "Aluminium and Glazing Contractor"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
