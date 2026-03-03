@@ -35,7 +35,7 @@ function App() {
       </main>
       
       <footer className="text-center py-4 bg-dark text-white">
-        <p>© 2026 Multures Suppliers Limited. All Rights Reserved.</p>
+        <p>© 2026 Multure Supplies Limited. All Rights Reserved.</p>
       </footer>
     </div>
   );

@@ -26,7 +26,7 @@ const About = () => {
               Your Trusted Partner in <span>Aluminium & Glazing</span>
             </h2>
             <p className="about-text" data-aos="fade-up" data-aos-delay="400">
-              Multures is a leading construction solutions provider, dedicated to delivering exceptional quality 
+              Multure is a leading construction solutions provider, dedicated to delivering exceptional quality 
               and innovative design in every project. With <strong>25 combined years of experience</strong> 
               in the construction industry, Multures takes pride in precision, professionalism, and commitment 
               to client satisfaction. Multures began as a sole proprietorship in 1994 before its incorporation 
